@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
             query: {
                 type: "",
                 tag: "热门",
-                page_limit: 24,
+                page_limit: 16,
                 page_start: 0
             }
         })
@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
             query: {
                 type: "tv",
                 tag: "热门",
-                page_limit: 24,
+                page_limit: 16,
                 page_start: 0
             }
         })
@@ -24,7 +24,7 @@ export default defineEventHandler(async (event) => {
             query: {
                 type: "tv",
                 tag: "国产剧",
-                page_limit: 24,
+                page_limit: 16,
                 page_start: 0
             }
         })
@@ -33,7 +33,7 @@ export default defineEventHandler(async (event) => {
             query: {
                 type: "tv",
                 tag: "综艺",
-                page_limit: 24,
+                page_limit: 16,
                 page_start: 0
             }
         })
@@ -42,7 +42,7 @@ export default defineEventHandler(async (event) => {
             query: {
                 type: "tv",
                 tag: "美剧",
-                page_limit: 24,
+                page_limit: 16,
                 page_start: 0
             }
         })
@@ -51,7 +51,7 @@ export default defineEventHandler(async (event) => {
             query: {
                 type: "tv",
                 tag: "日剧",
-                page_limit: 24,
+                page_limit: 16,
                 page_start: 0
             }
         })
@@ -60,7 +60,7 @@ export default defineEventHandler(async (event) => {
             query: {
                 type: "tv",
                 tag: "韩剧",
-                page_limit: 24,
+                page_limit: 16,
                 page_start: 0
             }
         })
@@ -69,7 +69,7 @@ export default defineEventHandler(async (event) => {
             query: {
                 type: "tv",
                 tag: "日本动画",
-                page_limit: 24,
+                page_limit: 16,
                 page_start: 0
             }
         })
@@ -78,7 +78,7 @@ export default defineEventHandler(async (event) => {
             query: {
                 type: "tv",
                 tag: "纪录片",
-                page_limit: 24,
+                page_limit: 16,
                 page_start: 0
             }
         })

@@ -74,10 +74,10 @@ onMounted(async () => {
   <div class="custom-bg min-h-screen py-[60px] transition-colors duration-300">
     <div class="flex flex-col items-center justify-center gap-4 mt-[60px] animate-fadeIn">
       <div class="flex items-center justify-center gap-4 hover:scale-105 transition-transform duration-300">
-        <img class="w-24 h-24 rounded-2xl shadow-lg" src="@/assets/my-logo.png" alt="logo">
+        <img class="w-24 h-24 rounded-3xl shadow-lg" src="@/assets/my-logo.png" alt="logo">
         <div class="text-center">
-          <h1 class="text-4xl text-gray-800 font-bold dark:text-white bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AIPAN.ME</h1>
-          <p class="text-gray-600 text-sm dark:text-gray-300 mt-2">爱盼 - 资源随心，娱乐无限</p>
+          <h1 class="text-4xl text-gray-800 font-bold dark:text-white bg-gradient-to-r from-green-500 to-cyan-500 bg-clip-text text-transparent">电子榨菜网</h1>
+          <p class="text-gray-600 text-sm dark:text-gray-300 mt-2">无限视频资源，尽在指尖，随时分享</p>
         </div>
       </div>
     </div>
@@ -85,7 +85,7 @@ onMounted(async () => {
       <div class="w-[85%] md:w-[700px] mx-auto">
         <div class="relative group">
           <input 
-            class="w-full pl-6 pr-[70px] py-4 rounded-full text-sm bg-white dark:bg-gray-700 border-2 border-transparent 
+            class="w-full pl-6 pr-[70px] py-4 rounded-lg text-sm bg-white dark:bg-gray-700 border-2 border-transparent
             focus:border-blue-500 dark:focus:border-blue-400 outline-none transition-all duration-300 shadow-lg
             dark:text-white placeholder-gray-400 dark:placeholder-gray-300"
             v-model="searchKeyword" 
@@ -94,7 +94,7 @@ onMounted(async () => {
           />
           <button 
             type="button"
-            class="search-btn absolute right-3 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full 
+            class="search-btn absolute right-1 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-lg
             bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700
             text-white transition-all duration-300 transform hover:scale-105 active:scale-95
             shadow-lg hover:shadow-blue-500/50 dark:hover:shadow-blue-600/30"
@@ -108,6 +108,14 @@ onMounted(async () => {
       </div>
     </div>
     <div class="h-16"></div>
+    <div v-if="doubanData.length === 0" class="mx-5 xl:max-w-[1200px] xl:mx-auto my-20">
+      <div class="flex flex-col items-center justify-center">
+        <img
+            src="https://media.giphy.com/media/pudldDRVsmLJgjKGIr/giphy.gif?cid=ecf05e4779q286glpglo8shijwj4yf3apn8509a6p0bpspkw&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+            alt="loading" width="100">
+        <text class="mt-2 hover:text-blue-500 transition-colors text-gray-700 font-bold text-2xl dark:text-white">推荐资源马上到...</text>
+      </div>
+    </div>
     <div class="mx-5 xl:max-w-[1200px] xl:mx-auto my-10" v-for="(item, i) in doubanData" :key="i">
       <h1 class="flex flex-row items-center text-sm sm:text-base text-gray-700 font-bold dark:text-white mt-[20px] mb-4">
         <div class="flex gap-1 mr-2">
@@ -178,6 +186,12 @@ onMounted(async () => {
         </div>
       </div>
     </div>
+    <el-backtop :right="24" :bottom="24"
+        class="!bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600
+               !w-12 !h-12 transition-all duration-300 !rounded-xl group hover:scale-110
+               !shadow-lg hover:!shadow-xl backdrop-blur-sm flex items-center justify-center">
+        <i class="fas fa-arrow-up text-white group-hover:animate-bounce"></i>
+      </el-backtop>
   </div>
 </template>
 
@@ -203,11 +217,14 @@ onMounted(async () => {
 
 .custom-bg {
   position: relative;
-  background-image: url('@/assets/hero-bg-1.png');
   background-size: 100% auto;
   background-position: top;
   background-repeat: no-repeat;
-  background-color: rgba(245, 246, 249, 0.95);
+
+
+  background-color: #CDDCDC;
+  background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%);
+  background-blend-mode: screen, overlay;
 }
 
 .custom-bg::before {

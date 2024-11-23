@@ -7,7 +7,7 @@
     <div
       class="w-full backdrop-blur-md bg-white/40 dark:bg-gray-800/40 sticky top-0 z-10 shadow-sm transition-all duration-300">
       <div class="max-w-[1240px] mx-auto px-4 py-4">
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex flex-col justify-between sm:flex-row gap-4">
           <!-- Category Selection -->
           <div class="flex gap-3 transition-all duration-300">
             <el-button v-for="(item, index) in categories" :key="index"
@@ -32,7 +32,7 @@
           <!-- Stats Display with Enhanced Visual -->
           <div v-if="category === 'clouddrive' && loadingProgress.isLoading"
             class="flex-1 flex items-center gap-4 bg-white/50 dark:bg-gray-700/50 rounded-lg p-3 transition-all duration-300 backdrop-blur-sm">
-            <div class="flex-1 relative">
+            <div class="flex-1 relative overflow-hidden">
               <el-progress
                 :percentage="Math.round((loadingProgress.completed / loadingProgress.total) * 100)"
                 :stroke-width="4"
@@ -46,6 +46,10 @@
               搜索中... {{ loadingProgress.completed }}/{{ loadingProgress.total }}
             </span>
           </div>
+
+<!--          <div v-else class="leading-loose">没有搜到资源?-->
+<!--            <text class="cursor-pointer text-purple-600 hover:text-blue-600">点击此处提交</text>-->
+<!--          </div>-->
         </div>
       </div>
     </div>
@@ -57,8 +61,7 @@
         <transition name="fade" mode="out-in">
           <div class="p-4" v-if="category === 'clouddrive'">
             <div class="transition-all duration-300 space-y-2 ">
-              <disk-info-list :sources="sources" :skeleton-loading="skeletonLoading">
-              </disk-info-list>
+              <disk-info-list :sources="sources" :skeleton-loading="skeletonLoading"></disk-info-list>
             </div>
           </div>
         </transition>
@@ -643,18 +646,18 @@ const categories = [
     icon: 'fas fa-cloud',
     description: '搜索各大网盘资源'
   },
-  { 
-    value: 'onlineVod', 
-    label: '在线观影',
-    icon: 'fas fa-film',
-    description: '搜索在线视频资源'
-  },
-  { 
-    value: 'soupian', 
-    label: '搜片',
-    icon: 'fas fa-video',
-    description: '专业影视搜索引擎'
-  }
+  // {
+  //   value: 'onlineVod',
+  //   label: '在线观影',
+  //   icon: 'fas fa-film',
+  //   description: '搜索在线视频资源'
+  // },
+  // {
+  //   value: 'soupian',
+  //   label: '搜片',
+  //   icon: 'fas fa-video',
+  //   description: '专业影视搜索引擎'
+  // }
 ]
 </script>
 

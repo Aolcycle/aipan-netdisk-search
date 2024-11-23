@@ -9,6 +9,7 @@ export const useDoubanStore = defineStore('douban', {
         async getDoubanData() {
             let res:any = await $fetch('/api/douban/new')
             if (res.code === 200) {
+                console.log(res.data)
                 this.doubanData = res.data
             }
         }
