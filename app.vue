@@ -2,10 +2,12 @@
     <NuxtLayout>
         <NuxtPage></NuxtPage>
     </NuxtLayout>
+    <Analytics/>
 </template>
 
 <script setup>
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import { Analytics } from '@vercel/analytics/nuxt'
 
 const nuxtApp = useNuxtApp()
 
