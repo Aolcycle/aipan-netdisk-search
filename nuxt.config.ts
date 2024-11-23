@@ -35,12 +35,12 @@ export default defineNuxtConfig({
                 { name: 'format-detection', content: 'telephone=no' },
                 { property: 'og:title', content: '电子榨菜：网盘资源搜索神器，资源分享平台' },
                 { property: 'og:description', content: '电子榨菜是一个免费的资源搜索平台，提供网盘、音乐、影视等多种资源，一站式服务，供学习使用。' },
-                { property: 'og:image', content: 'https://aipan.me/logo.png' },
-                { property: 'og:url', content: 'https://aipan.me' },
+                { property: 'og:image', content: 'https://blog.notd.cn/images/search-logo.png' },
+                { property: 'og:url', content: 'https://search.kfcvivo50.cc' },
                 { name: 'twitter:card', content: 'summary_large_image' },
                 { name: 'twitter:title', content: '电子榨菜：网盘资源搜索神器，资源分享平台' },
                 { name: 'twitter:description', content: '免费的资源搜索平台，涵盖音乐、网盘、影视等内容，学习探索好去处！' },
-                { name: 'twitter:image', content: 'https://aipan.me/logo.png' },
+                { name: 'twitter:image', content: 'https://blog.notd.cn/images/search-logo.png' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 { name: 'referrer', content: 'no-referrer' },
                 { name: 'referrer', content: 'always' },
@@ -158,7 +158,7 @@ export default defineNuxtConfig({
     },
     site: {
         name: '电子榨菜 - 无限视频资源，尽在指尖，随时分享',
-        url: 'https://www.aipan.me',
+        url: 'https://search.kfcvivo50.cc/',
         description: '电子榨菜 - 无限视频资源，尽在指尖，随时分享， 一个网盘资源搜索神器，资源分享平台，仅供学习使用，不支持商业用途。'
     },
     compatibilityDate: '2024-11-23'
