@@ -18,7 +18,7 @@ const donate = () => {
     <p class="text-center text-sm">© 2024 search.kfcvivo50.cc 电子榨菜网 - 无限视频资源，尽在指尖，随时分享</p>
         <p class="text-center text-sm">
             声明：本站内容皆来自网络公开资源。本站不储存、复制、传播任何文件，不做任何盈利，仅作个人公益学习，请勿非法&商业传播，如有侵权，请及时
-            <a class="text-blue-500 underline" href="mailto:yunus0535@yandex.com" title="点击留言"> 留言 </a> 告知删除。
+            <a class="text-blue-500 underline" href="mailto:notd0535@gmail.com" title="点击留言"> 留言 </a> 告知删除。
         </p>
   </div>
 </template>
