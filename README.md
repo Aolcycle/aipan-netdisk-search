@@ -1,38 +1,3 @@
-# 爱盘-网盘资源搜索 Web
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/unilei/aipan-netdisk-search.git&project-name=aipan-netdisk-search&repository-name=aipan-netdisk-search)
-
-🔥 爱盘-网盘资源搜索是一个开源的网盘资源聚合搜索平台。
-
-## 功能特点
-
-- 🎯 多源聚合搜索
-- 📺 在线视频播放
-- 🗄️ Alist 源聚合
-- 📝 博客系统
-- 🔐 后台管理系统
-- 📊 资源管理
-- 🚀 批量导入导出
-
-## 技术栈
-
-- 💻 Frontend
-  - Nuxt.js 3
-  - Vue 3
-  - TailwindCSS
-  - Element Plus
-
-- 🛠 Backend
-  - Node.js v20.18.0
-  - PostgreSQL
-  - Prisma ORM
-  - JWT Authentication
-
-## 在线演示
-
-- 👉 [爱盘-网盘资源搜索](https://www.aipan.me)
-- 💝 [欢迎打赏](https://www.aipan.me/donate)
-
 ## 快速开始
 
 ### 环境要求
@@ -59,19 +24,6 @@
 
 3. **传统部署**
    - 查看 [传统部署文档](/DEPLOY.md#传统部署)
-
-## 最新更新
-
-- ✨ TV 播放功能
-- 🔄 Alist 源聚合播放
-- 🗑️ 批量删除功能
-- 📝 博客功能
-- 📤 批量上传数据
-  - [CSV 示例](/assets/readme/demo/demo-multi.csv)
-  - [XLSX 示例](https://r2cf.aipan.me/readme/demo/demo-multi.xls)
-- 🔐 后台管理系统
-  - 访问路径：`/login`、`/admin/dashboard`、`/admin/clouddrive`
-  - 支持自定义网盘资源管理
 
 ## 项目结构
 
